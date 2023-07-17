@@ -1,0 +1,56 @@
+ul li {
+    display: inline-block;
+    transform: .3s;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+animation-delay: calc(.2s* var(--i));
+}
+
+@keyframes  slidetop {
+    
+    0%{
+        transform:translateY(2px) ;
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0) ;
+        opacity:1;
+    }
+
+}
+
+
+.extra-animation {
+    transform: .1s;
+    opacity: 0;
+    animation: slidetop3 .1s ease;
+animation-delay: calc(.01s* var(--i));
+}
+
+@keyframes  slidetop3 {
+    
+    0%{
+        transform:translateY(100px) ;
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0) ;
+        opacity:1;
+    }
+
+}
+
+
+.nav-bg{
+    padding:0 0 15px 0 ;
+    }                  
+    
+.align{
+    align-items: center;
+}
+.gridit{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
